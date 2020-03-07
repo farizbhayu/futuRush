@@ -1,0 +1,176 @@
+:root{
+    --primary: #00a8cc;
+    /* --primary: #83f3ed; */
+    --black: #011627;
+    --white: #fafaff;
+}
+body{
+    font-family: 'Monserrat', sans-serif;
+}
+h1,h2,h3{
+    font-weight: 900;
+}
+h4,h5,h6{
+    font-weight: 700;
+}
+
+/* Buttons */
+.btn-outline-secondary{
+    background-color: transparent !important;
+    border-color: var(--black) !important;
+    color: var(--black) !important;
+    border-radius: 0;
+    position: relative;
+}
+.btn-outline-secondary::before{
+    content: '';
+    position: absolute;
+    background-color: var(--primary);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-outline-secondary:hover:before{
+    width: 100%;
+}
+.btn-secondary{
+    background: var(--black) !important;
+    border-radius: 0;
+    border-color: var(--black) !important;
+}
+.btn-secondary:hover{
+    color: var(--primary) !important;
+}
+.btn-primary{
+    background: var(--primary) !important;
+    border-radius: 0;
+    border-color: var(--primary) !important;
+    color: var(--black) !important;
+}
+.btn-primary:hover{
+    background: var(--black) !important;
+    color: var(--primary) !important;
+}
+/* Buttons */
+
+/* Navbar */
+.navbar{
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.nav-link, .navbar-brand{
+    color: var(--black);
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: #777;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+}
+/* Navbar */
+
+/* Call to Action */
+.call-to-action{
+    background: var(--black);
+    color: var(--white);
+}
+.heading-line{
+    height: 3px;
+    width: 10%;
+    background: var(--primary);
+}
+/* Call to Action */
+
+/* Services */
+.services i{
+    font-size: 2rem;
+    color: var(--primary);
+}
+/* Services */
+
+/* Portfolio */
+.dark{
+    color: var(--primary);
+    background: var(--black);
+    height: 300px;
+}
+.dark i{
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+.portfolio .img-fluid{
+    height: 300px;
+    object-fit: cover;
+}
+.portfolio .col-lg-3{
+    position: relative;
+}
+.filter{
+    position: absolute;
+    background: var(--primary);
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+/* Portfolio */
+
+/* Footer */
+.footer{
+    background: var(--black);
+    color: var(--white);
+}
+.footer a{
+    color: var(--white);
+}
+/* Footer */
+
+/* Responsive */
+
+
+@media(max-width: 900px){
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .call-to-action .container{
+        width: 100% !important;
+    }
+    .portfolio .img-fluid{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Google Maps */
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    height: 425px;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* Google Maps */
